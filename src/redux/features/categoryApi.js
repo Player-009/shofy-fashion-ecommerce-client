@@ -5,16 +5,16 @@ export const categoryApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     addCategory: builder.mutation({
       query: (data) => ({
-        url: "http://shofy-fashion-ecommerce-backend.vercel.app/api/category/add",
+        url: "https://shofy-fashion-ecommerce-backend.vercel.app/api/category/add",
         method: "POST",
         body: data,
       }),
     }),
     getShowCategory: builder.query({
-      query: () => `http://shofy-fashion-ecommerce-backend.vercel.app/api/category/show`
+      query: () => `https://shofy-fashion-ecommerce-backend.vercel.app/api/category/show`
     }),
     getProductTypeCategory: builder.query({
-      query: (type) => `http://shofy-fashion-ecommerce-backend.vercel.app/api/category/show/${type}`
+      query: (type) => `https://shofy-fashion-ecommerce-backend.vercel.app/api/category/show/${type}`
     }),
   }),
 });
